@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>USIU First-Year Companion — v1</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>USIU First-Year Companion</h1>
+    <p class="tagline">A tiny orientation helper — fast, friendly, and made for first weeks.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <h2 id="greeting">Hello!</h2>
+      <p>Quick actions to estimate weekly campus costs and set a simple theme.</p>
+      <div class="actions">
+        <button id="run">Run Estimator</button>
+        <button id="theme">Toggle Theme</button>
+        <button id="reset">Reset Summary</button>
+      </div>
+    </section>
+    <section class="panel summary-panel">
+      <h3>Weekly Summary</h3>
+      <pre id="summary">Run the estimator to see your weekly breakdown…</pre>
+    </section>
+  </main>
+  <footer>
+    <small>© USIU Student Affairs — Demo v1. Generated for: <span id="owner">Your Student ID</span></small>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Inline wiring (keeps main logic external)
+    document.getElementById("run").addEventListener("click", runEstimator);
+    document.getElementById("theme").addEventListener("click", toggleTheme);
+    document.getElementById("reset").addEventListener("click", function() {
+      document.getElementById('summary').innerText = 'Run the estimator to see your weekly breakdown…';
+    });
+  </script>
+</body>
+</html>

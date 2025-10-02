@@ -24,12 +24,7 @@ usiu-first-year-companion-unique/
 └─ README.md
 
 
- How to test locally (no Docker)
-1. Extract the ZIP.
-2. Open `public/index.html` in your browser (double-click or File → Open).
-3. Allow popups/prompts. On load you will be prompted for your name.
-4. Click **Run Estimator** to run the prompts and view the summary.
-5. Click **Toggle Theme** to switch day/night. Click **Reset Summary** to clear results.
+
 
  Docker: build & run (recommended)
 From the project root (where `Dockerfile` is):
